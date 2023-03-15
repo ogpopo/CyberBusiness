@@ -12,3 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0bbf493a6018b41b94c2288283a11a, type: 3}
   m_Name: Game Config
   m_EditorClassIdentifier: 
+  BaseBusinesPriceDatas:
+  - BusinesId: 0
+    Price: 3
+  - BusinesId: 1
+    Price: 40
+  - BusinesId: 2
+    Price: 200
+  - BusinesId: 3
+    Price: 1000
+  - BusinesId: 4
+    Price: 5000

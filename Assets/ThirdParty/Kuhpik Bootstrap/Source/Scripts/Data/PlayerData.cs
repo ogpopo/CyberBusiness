@@ -1,7 +1,4 @@
 ﻿using System;
-using UnityEngine;
-using NaughtyAttributes;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace Kuhpik
@@ -12,8 +9,16 @@ namespace Kuhpik
     [Serializable]
     public class PlayerData
     {
-        // Example (I use public fields for data, but u free to use properties\methods etc)
-        // [BoxGroup("level")] public int level;
-        // [BoxGroup("currency")] public int money;
+        public Dictionary<BusinesId, BusinesState> BusinesDataDictionary;
+        public Dictionary<BusinesId, int> BusinesLevelData = new Dictionary<BusinesId, int>()
+            {
+                {BusinesId.Id1, 1},
+                {BusinesId.Id2, 1},
+                {BusinesId.Id3, 1},
+                {BusinesId.Id4, 1},
+                {BusinesId.Id5, 1},
+            };
+
+        public int PlayerBalance = 0;
     }
 }

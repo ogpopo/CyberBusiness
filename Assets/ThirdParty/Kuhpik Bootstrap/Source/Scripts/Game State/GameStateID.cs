@@ -5,13 +5,10 @@
         // Don't change int values in the middle of development.
         // Otherwise all of your settings in inspector can be messed up.
 
-        Loading = 0,
-        Menu = 1,
-        Game = 2,
-        Pause = 3,
-        Result = 10,
-        Shop = 20,
-        Settings = 30
+        Loading = 3,
+        Initialization = 4,
+        Game = 6,
+        Shared = 10
 
         // Extend just like that
         //
