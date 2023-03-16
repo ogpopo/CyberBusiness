@@ -6,7 +6,7 @@ using UnityEngine;
 public class BusinesLevelUp : GameSystem
 {
     private ChangeMoneySignal changeMoneySignal = Signals.Get<ChangeMoneySignal>();
-    private UpdateUIForOpenBusinesSignal updateUIForOpenBusinesSignal = Signals.Get<UpdateUIForOpenBusinesSignal>();
+    private UpdateUIForBusinesSignal updateUIForOpenBusinesSignal = Signals.Get<UpdateUIForBusinesSignal>();
 
     public override void OnInit()
     {
@@ -17,7 +17,7 @@ public class BusinesLevelUp : GameSystem
 
     private void OnLevelUp(BusinesController busines)
     {
-        var levelUpPrice = config.BaseBusinesPriceDatas.FirstOrDefault(x => x.BusinesId == busines.BusinesId).Price * player.BusinesLevelData[busines.BusinesId];
+        var levelUpPrice = config.BaseBusinesPriceConfig.FirstOrDefault(x => x.BusinesId == busines.BusinesId).Price * player.BusinesLevelData[busines.BusinesId];
 
         if (player.PlayerBalance >= levelUpPrice)
         {

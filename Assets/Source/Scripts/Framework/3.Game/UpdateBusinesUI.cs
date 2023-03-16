@@ -1,7 +1,6 @@
 using Kuhpik;
 using Supyrb;
 using System.Linq;
-using UnityEngine;
 
 public class UpdateBusinesUI : GameSystem
 {
@@ -9,21 +8,28 @@ public class UpdateBusinesUI : GameSystem
     {
         base.OnInit();
 
-        Signals.Get<UpdateUIForOpenBusinesSignal>().AddListener(OnUpdateUIForOpenBusines);
-        // Signals.Get<UpdateUIForCloseBusines>().AddListener(OnUpdateUIForCloseBusines);
+        Signals.Get<UpdateUIForBusinesSignal>().AddListener(OnUpdateUIForBusines);
     }
 
-    private void OnUpdateUIForOpenBusines(BusinesController businesController)
+    private void OnUpdateUIForBusines(BusinesController businesController)
     {
-        businesController.UnlockPrice.text = config.BaseBusinesPriceDatas.FirstOrDefault(x => x.BusinesId == businesController.BusinesId).Price.ToString() + "$";
+        businesController.UnlockPrice.text = config.BaseBusinesPriceConfig.FirstOrDefault(x => x.BusinesId == businesController.BusinesId).Price.ToString() + "$";
 
         businesController.BusinessLevel.text = player.BusinesLevelData[businesController.BusinesId].ToString();
-        businesController.BusinessIncome.text = config.BusinesIncomeDatas.FirstOrDefault(x => x.BusinesId == businesController.BusinesId).BasicIncomeValue * player.BusinesLevelData[businesController.BusinesId] + "$";
-        businesController.LevelUpPrice.text = (config.BaseBusinesPriceDatas.FirstOrDefault(x => x.BusinesId == businesController.BusinesId).Price * player.BusinesLevelData[businesController.BusinesId]).ToString();
+
+        businesController.BusinessIncome.text = config.BusinesIncomeConfig.FirstOrDefault(x =>
+        x.BusinesId == businesController.BusinesId).BasicIncomeValue * player.BusinesLevelData[businesController.BusinesId] + "$";
+
+        businesController.LevelUpPrice.text = (config.BaseBusinesPriceConfig.FirstOrDefault(x =>
+        x.BusinesId == businesController.BusinesId).Price * player.BusinesLevelData[businesController.BusinesId]).ToString() + "$";
+
+        for (int i = 0; i < businesController.BusinesImprovementControllers.Length; i++)
+        {
+            businesController.BusinesImprovementControllers[i].ImprovementIncome.text = config.BusinessImprovementDatas.FirstOrDefault(x =>
+            x.BusinesId == businesController.BusinesId).ImprovementDatas[i].InterestIncome.ToString() + "%";
+
+            businesController.BusinesImprovementControllers[i].CostBuyingImprovements.text = config.BusinessImprovementDatas.FirstOrDefault(x =>
+            x.BusinesId == businesController.BusinesId).ImprovementDatas[i].Price.ToString() + "$";
+        }
     }
-
-    //private void OnUpdateUIForCloseBusines(BusinesController businesController)
-    //{
-
-    //}
 }

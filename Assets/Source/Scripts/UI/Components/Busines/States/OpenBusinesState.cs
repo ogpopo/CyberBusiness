@@ -7,7 +7,7 @@ public class OpenBusinesState : _BusinesState
     [SerializeField] private Button levelUpButton;
 
     private BusinesLevelUpSignal businesLevelUpSignal = Signals.Get<BusinesLevelUpSignal>();
-    private UpdateUIForOpenBusinesSignal updateUIForOpenBusinesSignal = Signals.Get<UpdateUIForOpenBusinesSignal>();
+    private UpdateUIForBusinesSignal updateUIForOpenBusinesSignal = Signals.Get<UpdateUIForBusinesSignal>();
 
     public override void InitState(BusinesController businesController)
     {

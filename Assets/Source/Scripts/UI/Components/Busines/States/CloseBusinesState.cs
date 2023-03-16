@@ -1,14 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 using Supyrb;
-using TMPro;
 
 public class CloseBusinesState : _BusinesState
 {
     [SerializeField] private Button unlockButton;
 
     private BusinesUnlockSignal businesUnlockSignal = Signals.Get<BusinesUnlockSignal>();
-    private UpdateUIForOpenBusinesSignal updateUIForOpenBusinesSignal = Signals.Get<UpdateUIForOpenBusinesSignal>();
+    private UpdateUIForBusinesSignal updateUIForOpenBusinesSignal = Signals.Get<UpdateUIForBusinesSignal>();
 
     public override void InitState(BusinesController businesController)
     {

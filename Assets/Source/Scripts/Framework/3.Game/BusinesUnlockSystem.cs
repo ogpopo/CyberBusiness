@@ -16,7 +16,7 @@ public class BusinesUnlockSystem : GameSystem
 
     private void Unlock(BusinesController busines)
     {       
-        var price = config.BaseBusinesPriceDatas.FirstOrDefault(x => x.BusinesId == busines.BusinesId).Price
+        var price = config.BaseBusinesPriceConfig.FirstOrDefault(x => x.BusinesId == busines.BusinesId).Price
             * player.BusinesLevelData[busines.BusinesId];
 
         if (player.PlayerBalance >= price)

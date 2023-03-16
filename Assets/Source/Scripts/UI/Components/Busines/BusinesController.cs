@@ -1,10 +1,8 @@
 using Kuhpik;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Supyrb;
 
 public enum BusinesId
 {
@@ -26,6 +24,8 @@ public class BusinesController : MonoBehaviour
     [SerializeField] private _BusinesState[] allStates;
     [SerializeField] private BusinesId businesId;
 
+    [SerializeField] private ImprovementController[] businesImprovementControllers = new ImprovementController[2];
+
     [SerializeField] private Image progressBar;
     [SerializeField] private TMP_Text businessLevel;
     [SerializeField] private TMP_Text businessIncome;
@@ -40,6 +40,8 @@ public class BusinesController : MonoBehaviour
     private _BusinesState activeState;
 
     public BusinesId BusinesId => businesId;
+
+    public ImprovementController[] BusinesImprovementControllers => businesImprovementControllers;
 
     public Image ProgressBar => progressBar;
     public TMP_Text BusinessLevel => businessLevel;
@@ -75,15 +77,15 @@ public class BusinesController : MonoBehaviour
         }
     }
 
-    public void Init(BusinesState newState)
+    public void Init(BusinesState state)
     {
-        if (!businesDictionary.ContainsKey(newState) || businesDictionary.Count == 0)
+        if (!businesDictionary.ContainsKey(state) || businesDictionary.Count == 0)
             return;
 
         if (activeState != null)
             activeState.gameObject.SetActive(false);
 
-        activeState = businesDictionary[newState];
+        activeState = businesDictionary[state];
         activeState.gameObject.SetActive(true);
         activeState.OpenState();
     }
@@ -108,7 +110,6 @@ public class BusinesController : MonoBehaviour
 
     public void IncomeProgressing()
     {
-
     }
 }
 

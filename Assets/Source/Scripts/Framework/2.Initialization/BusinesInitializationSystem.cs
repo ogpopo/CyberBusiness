@@ -11,7 +11,12 @@ public class BusinesInitializationSystem : GameSystem
         base.OnInit();
 
         foreach (var busines in allBusines)
+        {
             busines.StartBusinesController();
+
+            foreach (var businesImprovement in busines.BusinesImprovementControllers)
+                businesImprovement.StartImprovementController();
+        }
 
         if (player.BusinesDataDictionary == null)
         {
@@ -38,6 +43,20 @@ public class BusinesInitializationSystem : GameSystem
         {
             player.BusinesDataDictionary.TryGetValue(businesController.BusinesId, out BusinesState businesState);
             businesController.Init(businesState);
+
+            UploadingBusinesImprovements(businesController);
+        }
+    }
+
+    private void UploadingBusinesImprovements(BusinesController businesController)
+    {
+        player.BusinessImprovementDataDictinary.TryGetValue(businesController.BusinesId, out ImprovementBusinesState[] improvementStates);
+
+        for (int i = 0; i < businesController.BusinesImprovementControllers.Length; i++)
+        {
+            businesController.BusinesImprovementControllers[i].Init(improvementStates[i]);
+
+            print(improvementStates[i]);
         }
     }
 }

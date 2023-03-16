@@ -7,21 +7,21 @@ namespace Kuhpik
     [CreateAssetMenu(menuName = "Config/GameConfig")]
     public sealed class GameConfig : ScriptableObject
     {
-        public List<BusinesPriceData> BaseBusinesPriceDatas = new List<BusinesPriceData>();
-        public List<BusinesIncomeData> BusinesIncomeDatas = new List<BusinesIncomeData>();
-        public BusinessImprovementData[] BusinessImprovementDatas = new BusinessImprovementData[2];
+        public List<BusinesPriceConfig> BaseBusinesPriceConfig = new List<BusinesPriceConfig>();
+        public List<BusinesIncomeConfig> BusinesIncomeConfig = new List<BusinesIncomeConfig>();
+        public BusinessImprovementConfig[] BusinessImprovementDatas = new BusinessImprovementConfig[2];
     }
 }
 
 [Serializable]
-public class BusinesPriceData
+public class BusinesPriceConfig
 {
     public BusinesId BusinesId;
     public int Price;
 }
 
 [Serializable]
-public class BusinesIncomeData
+public class BusinesIncomeConfig
 {
     public BusinesId BusinesId;
     public int IncomeDelay;
@@ -29,14 +29,15 @@ public class BusinesIncomeData
 }
 
 [Serializable]
-public class BusinessImprovementData
+public class BusinessImprovementConfig
 {
     public BusinesId BusinesId;
     public ImprovementData[] ImprovementDatas = new ImprovementData[2];
 
+    [Serializable]
     public class ImprovementData
     {
+        public int InterestIncome;
         public int Price;
-        [Range(0, 100)] public int InterestIncome;
     }
 }

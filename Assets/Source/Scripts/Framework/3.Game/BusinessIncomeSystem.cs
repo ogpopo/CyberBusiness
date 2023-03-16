@@ -43,15 +43,15 @@ public class BusinessIncomeSystem : GameSystem
 
                 IncomeProgresDictionary[busines.BusinesId]++;
 
-                float value = (float)IncomeProgresDictionary[busines.BusinesId] / config.BusinesIncomeDatas.FirstOrDefault(x => x.BusinesId == busines.BusinesId).IncomeDelay;
+                float value = (float)IncomeProgresDictionary[busines.BusinesId] / config.BusinesIncomeConfig.FirstOrDefault(x => x.BusinesId == busines.BusinesId).IncomeDelay;
 
                 busines.ProgressBar.DOKill();
                 busines.ProgressBar.DORewind();
                 busines.ProgressBar.DOFillAmount(value, progressFillingRate).OnComplete(() =>
                 {
-                    if (IncomeProgresDictionary[busines.BusinesId] >= config.BusinesIncomeDatas.FirstOrDefault(x => x.BusinesId == busines.BusinesId).IncomeDelay)
+                    if (IncomeProgresDictionary[busines.BusinesId] >= config.BusinesIncomeConfig.FirstOrDefault(x => x.BusinesId == busines.BusinesId).IncomeDelay)
                     {
-                        changeMoneySignal.Dispatch(config.BusinesIncomeDatas.FirstOrDefault(x => x.BusinesId == busines.BusinesId).BasicIncomeValue * player.BusinesLevelData[busines.BusinesId]);
+                        changeMoneySignal.Dispatch(config.BusinesIncomeConfig.FirstOrDefault(x => x.BusinesId == busines.BusinesId).BasicIncomeValue * player.BusinesLevelData[busines.BusinesId]);
                         IncomeProgresDictionary[busines.BusinesId] = 0;
 
                         busines.ProgressBar.DOKill();

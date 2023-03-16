@@ -1,5 +1,5 @@
 using Supyrb;
 
-public class UpdateUIForOpenBusinesSignal : Signal<BusinesController>
+public class UpdateUIForBusinesSignal : Signal<BusinesController>
 {
 }
