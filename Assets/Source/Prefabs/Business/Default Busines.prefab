@@ -79,7 +79,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 23.2
+  m_PixelsPerUnitMultiplier: 0.4
 --- !u!114 &6657117995128253525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,7 +548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7767827600104697595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -584,7 +584,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unlockButton: {fileID: 0}
-  priceCount: {fileID: 0}
 --- !u!1 &3317199728932632935
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,7 +799,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 23.2
+  m_PixelsPerUnitMultiplier: 0.4
 --- !u!114 &6135123776662192656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1229,7 +1228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13000001, y: 0.6483334}
   m_AnchorMax: {x: 0.13000001, y: 0.6483334}
-  m_AnchoredPosition: {x: 88.94302, y: -290.90137}
+  m_AnchoredPosition: {x: 71, y: -290.90137}
   m_SizeDelta: {x: 97.7812, y: 107.3677}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5947811977429620655
@@ -1674,7 +1673,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.671
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -2026,9 +2025,9 @@ RectTransform:
   m_Father: {fileID: 2296336409851540164}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.13000001, y: 0.6483334}
-  m_AnchorMax: {x: 0.13000001, y: 0.6483334}
-  m_AnchoredPosition: {x: 290.543, y: -290.90137}
+  m_AnchorMin: {x: 0.39100003, y: 0.497}
+  m_AnchorMax: {x: 0.39100003, y: 0.497}
+  m_AnchoredPosition: {x: -37, y: 2.0999985}
   m_SizeDelta: {x: 97.7812, y: 107.3677}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5947811978399434607
@@ -2303,7 +2302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 244.82, y: 2.9907112}
+  m_AnchoredPosition: {x: 221, y: 2.9907112}
   m_SizeDelta: {x: 293.64, y: 89.184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5947811978724736213
@@ -3796,3 +3795,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5db54802d072fd41a128b859f9d74ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelUpButton: {fileID: 0}

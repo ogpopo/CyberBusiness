@@ -49,6 +49,8 @@ public class BusinesController : MonoBehaviour
 
     public TMP_Text UnlockPrice => unlockPrice;
 
+    public BusinesState ActiveState => activeState.State;
+
     public void StartBusinesController()
     {
         if (businesDictionary.Count != 0)
@@ -102,6 +104,11 @@ public class BusinesController : MonoBehaviour
 
         Bootstrap.Instance.PlayerData.BusinesDataDictionary[businesId] = newState;
         Bootstrap.Instance.SaveGame();
+    }
+
+    public void IncomeProgressing()
+    {
+
     }
 }
 

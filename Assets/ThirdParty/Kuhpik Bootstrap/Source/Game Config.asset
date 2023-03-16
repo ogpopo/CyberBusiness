@@ -23,3 +23,19 @@ MonoBehaviour:
     Price: 1000
   - BusinesId: 4
     Price: 5000
+  BusinesIncomeDatas:
+  - BusinesId: 0
+    IncomeDelay: 3
+    BasicIncomeValue: 3
+  - BusinesId: 0
+    IncomeDelay: 0
+    BasicIncomeValue: 0
+  - BusinesId: 0
+    IncomeDelay: 0
+    BasicIncomeValue: 0
+  - BusinesId: 0
+    IncomeDelay: 0
+    BasicIncomeValue: 0
+  - BusinesId: 0
+    IncomeDelay: 0
+    BasicIncomeValue: 0

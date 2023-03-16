@@ -9,7 +9,7 @@ public class BusinesInitializationSystem : GameSystem
     public async override void OnInit()
     {
         base.OnInit();
-        //print(allBusines.Count);
+
         foreach (var busines in allBusines)
             busines.StartBusinesController();
 
@@ -17,7 +17,7 @@ public class BusinesInitializationSystem : GameSystem
         {
             player.BusinesDataDictionary = new Dictionary<BusinesId, BusinesState>()
             {
-                {BusinesId.Id1, BusinesState.Close},
+                {BusinesId.Id1, BusinesState.Open},
                 {BusinesId.Id2, BusinesState.Close},
                 {BusinesId.Id3, BusinesState.Close},
                 {BusinesId.Id4, BusinesState.Close},

@@ -3,6 +3,7 @@ using UnityEngine;
 using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Kuhpik
 {
@@ -13,5 +14,6 @@ namespace Kuhpik
     public class GameData
     {
         public List<BusinesController> BusinesControllers = new List<BusinesController>();
+        //public List<BusinesController> OpenBusinesses => BusinesControllers.Where(x => x.ActiveState == BusinesState.Open).ToList();
     }
 }

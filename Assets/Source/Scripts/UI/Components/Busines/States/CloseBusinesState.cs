@@ -21,8 +21,6 @@ public class CloseBusinesState : _BusinesState
     {
         base.OpenState();
 
-        print("1111");
-
         updateUIForOpenBusinesSignal.Dispatch(businesController);
 
         unlockButton.onClick.AddListener(OnUnlock);

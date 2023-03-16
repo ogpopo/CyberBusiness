@@ -16,6 +16,10 @@ public class UpdateBusinesUI : GameSystem
     private void OnUpdateUIForOpenBusines(BusinesController businesController)
     {
         businesController.UnlockPrice.text = config.BaseBusinesPriceDatas.FirstOrDefault(x => x.BusinesId == businesController.BusinesId).Price.ToString() + "$";
+
+        businesController.BusinessLevel.text = player.BusinesLevelData[businesController.BusinesId].ToString();
+        businesController.BusinessIncome.text = config.BusinesIncomeDatas.FirstOrDefault(x => x.BusinesId == businesController.BusinesId).BasicIncomeValue * player.BusinesLevelData[businesController.BusinesId] + "$";
+        businesController.LevelUpPrice.text = (config.BaseBusinesPriceDatas.FirstOrDefault(x => x.BusinesId == businesController.BusinesId).Price * player.BusinesLevelData[businesController.BusinesId]).ToString();
     }
 
     //private void OnUpdateUIForCloseBusines(BusinesController businesController)

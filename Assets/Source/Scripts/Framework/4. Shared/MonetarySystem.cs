@@ -1,8 +1,8 @@
-using UnityEngine;
 using Kuhpik;
 using DG.Tweening;
 using System;
 using Supyrb;
+using System.Linq;
 
 public class MonetarySystem : GameSystemWithScreen<PlayerBalanceUI>
 {
@@ -32,7 +32,8 @@ public class MonetarySystem : GameSystemWithScreen<PlayerBalanceUI>
     {
         DOTween.Kill(moneyTween);
 
-        int changableValue = Int32.Parse(screen.MoneyCount.text);
+        int changableValue = Int32.Parse(string.Join("", screen.MoneyCount.text.Where(c => char.IsDigit(c))));
+
         moneyTween = DOTween.To(() => changableValue, x => changableValue = x, to, time).OnUpdate(() =>
         {
             screen.MoneyCount.text = changableValue.ToString() + "$";
