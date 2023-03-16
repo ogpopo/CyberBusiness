@@ -21,8 +21,6 @@ public class BuyingImprovementsForBusinessSystem : GameSystem
         foreach (var busines in game.BusinesControllers)
             if (busines.BusinesImprovementControllers.Contains(improvement))
                 rightBusiness = busines;
-            else
-                return;
 
         int index = 0;
 

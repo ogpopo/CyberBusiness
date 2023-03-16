@@ -488,6 +488,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   businesControllers:
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &4277330719651972788
 GameObject:
   m_ObjectHideFlags: 0

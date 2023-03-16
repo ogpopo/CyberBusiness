@@ -53,10 +53,6 @@ public class BusinesInitializationSystem : GameSystem
         player.BusinessImprovementDataDictinary.TryGetValue(businesController.BusinesId, out ImprovementBusinesState[] improvementStates);
 
         for (int i = 0; i < businesController.BusinesImprovementControllers.Length; i++)
-        {
             businesController.BusinesImprovementControllers[i].Init(improvementStates[i]);
-
-            print(improvementStates[i]);
-        }
     }
 }
