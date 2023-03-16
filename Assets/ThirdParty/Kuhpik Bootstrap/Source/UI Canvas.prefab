@@ -1108,11 +1108,31 @@ PrefabInstance:
       propertyPath: businesImprovementControllers.Array.data[1]
       value: 
       objectReference: {fileID: 6158186531367697737}
+    - target: {fileID: 3536948229988329762, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4924234238695869600, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}
       propertyPath: levelUpButton
       value: 
       objectReference: {fileID: 7183742656989621161}
+    - target: {fileID: 5147004656571278847, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Holographic Strippers
+      objectReference: {fileID: 0}
+    - target: {fileID: 5147004656571278847, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -209.50659
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947811977648271246, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Footrest Bar
+      objectReference: {fileID: 0}
     - target: {fileID: 5947811978293462437, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}
       propertyPath: m_Name
@@ -1222,6 +1242,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334853545235532765, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366236441091179758, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Invisible Condoms
       objectReference: {fileID: 0}
     - target: {fileID: 7818495372944418974, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}
@@ -1333,6 +1363,16 @@ PrefabInstance:
       propertyPath: levelUpButton
       value: 
       objectReference: {fileID: 7728532269434502885}
+    - target: {fileID: 5147004656571278847, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Patchwork Scars
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947811977648271246, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Prancing Mare
+      objectReference: {fileID: 0}
     - target: {fileID: 5947811978293462437, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}
       propertyPath: m_Name
@@ -1443,6 +1483,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7366236441091179758, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Galactic Parking
+      objectReference: {fileID: 0}
     - target: {fileID: 7818495372944418974, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}
       propertyPath: unlockButton
@@ -1548,6 +1593,16 @@ PrefabInstance:
       propertyPath: levelUpButton
       value: 
       objectReference: {fileID: 168511655}
+    - target: {fileID: 5147004656571278847, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Laser Shredder
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947811977648271246, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Dog Pit
+      objectReference: {fileID: 0}
     - target: {fileID: 5947811978293462437, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}
       propertyPath: m_Name
@@ -1657,6 +1712,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366236441091179758, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Plasma Urns
       objectReference: {fileID: 0}
     - target: {fileID: 7818495372944418974, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}
@@ -1768,6 +1828,16 @@ PrefabInstance:
       propertyPath: levelUpButton
       value: 
       objectReference: {fileID: 2473622273127625717}
+    - target: {fileID: 5147004656571278847, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Invisible Beds
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947811977648271246, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Gallows
+      objectReference: {fileID: 0}
     - target: {fileID: 5947811978293462437, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}
       propertyPath: m_Name
@@ -1877,6 +1947,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366236441091179758, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Supersonic Cleaner
       objectReference: {fileID: 0}
     - target: {fileID: 7818495372944418974, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}
@@ -1988,6 +2063,16 @@ PrefabInstance:
       propertyPath: levelUpButton
       value: 
       objectReference: {fileID: 3001408696891619482}
+    - target: {fileID: 5147004656571278847, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Laser Cannon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5947811977648271246, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Steinway Beer Garden
+      objectReference: {fileID: 0}
     - target: {fileID: 5947811978293462437, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}
       propertyPath: m_Name
@@ -2097,6 +2182,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366236441091179758, guid: 1a44531dc4c25534a98eb9d46d0907e1,
+        type: 3}
+      propertyPath: m_text
+      value: Plasma Beer
       objectReference: {fileID: 0}
     - target: {fileID: 7818495372944418974, guid: 1a44531dc4c25534a98eb9d46d0907e1,
         type: 3}

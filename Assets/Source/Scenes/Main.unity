@@ -637,14 +637,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 782687104, guid: 7c59469aae2288b4a9454662a7f79fe3, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -739.83264
-      objectReference: {fileID: 0}
-    - target: {fileID: 1244781554, guid: 7c59469aae2288b4a9454662a7f79fe3, type: 3}
-      propertyPath: m_text
-      value: Dog Pit
-      objectReference: {fileID: 0}
     - target: {fileID: 1615262170, guid: 7c59469aae2288b4a9454662a7f79fe3, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -660,31 +652,6 @@ PrefabInstance:
     - target: {fileID: 1615262170, guid: 7c59469aae2288b4a9454662a7f79fe3, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 13188869750668880, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1578241242289820035, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Laser Shredder
-      objectReference: {fileID: 0}
-    - target: {fileID: 1649702997354105792, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Supersonic Cleaner
-      objectReference: {fileID: 0}
-    - target: {fileID: 2096385178544521391, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Plasma Beer
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473622274205196448, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Gallows
       objectReference: {fileID: 0}
     - target: {fileID: 2473622274835057288, guid: 7c59469aae2288b4a9454662a7f79fe3,
         type: 3}
@@ -706,11 +673,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3001408695814106063, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Steinway Beer Garden
-      objectReference: {fileID: 0}
     - target: {fileID: 3001408696450515431, guid: 7c59469aae2288b4a9454662a7f79fe3,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -730,21 +692,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3796814280418865298, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Plasma Urns
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013578451649899217, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Invisible Beds
-      objectReference: {fileID: 0}
-    - target: {fileID: 4341522003471835582, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Laser Cannon
       objectReference: {fileID: 0}
     - target: {fileID: 4447428783891798019, guid: 7c59469aae2288b4a9454662a7f79fe3,
         type: 3}
@@ -856,16 +803,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6269355490398671772, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Invisible Condoms
-      objectReference: {fileID: 0}
-    - target: {fileID: 6913515116541314768, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Galactic Parking
-      objectReference: {fileID: 0}
     - target: {fileID: 7183742657362023124, guid: 7c59469aae2288b4a9454662a7f79fe3,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -886,21 +823,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7183742658061629692, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Footrest Bar
-      objectReference: {fileID: 0}
-    - target: {fileID: 7409251679884795055, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -22
-      objectReference: {fileID: 0}
-    - target: {fileID: 7728532268363541936, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Prancing Mare
-      objectReference: {fileID: 0}
     - target: {fileID: 7728532268725356440, guid: 7c59469aae2288b4a9454662a7f79fe3,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -920,21 +842,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8527229370470429325, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Holographic Strippers
-      objectReference: {fileID: 0}
-    - target: {fileID: 8527229370470429325, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_margin.z
-      value: -209.50659
-      objectReference: {fileID: 0}
-    - target: {fileID: 9126062141937051585, guid: 7c59469aae2288b4a9454662a7f79fe3,
-        type: 3}
-      propertyPath: m_text
-      value: Patchwork Scars
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c59469aae2288b4a9454662a7f79fe3, type: 3}
