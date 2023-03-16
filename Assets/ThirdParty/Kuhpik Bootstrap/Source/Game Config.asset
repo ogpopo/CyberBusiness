@@ -15,38 +15,58 @@ MonoBehaviour:
   BaseBusinesPriceConfig:
   - BusinesId: 0
     Price: 3
+  - BusinesId: 1
+    Price: 40
+  - BusinesId: 2
+    Price: 200
+  - BusinesId: 3
+    Price: 1000
+  - BusinesId: 4
+    Price: 5000
   BusinesIncomeConfig:
   - BusinesId: 0
     IncomeDelay: 3
     BasicIncomeValue: 3
+  - BusinesId: 1
+    IncomeDelay: 6
+    BasicIncomeValue: 40
+  - BusinesId: 2
+    IncomeDelay: 10
+    BasicIncomeValue: 200
+  - BusinesId: 3
+    IncomeDelay: 17
+    BasicIncomeValue: 1000
+  - BusinesId: 4
+    IncomeDelay: 30
+    BasicIncomeValue: 5000
   BusinessImprovementDatas:
   - BusinesId: 0
     ImprovementDatas:
     - InterestIncome: 50
-      Price: 10
+      Price: 50
     - InterestIncome: 100
       Price: 400
-  - BusinesId: 0
+  - BusinesId: 1
     ImprovementDatas:
-    - InterestIncome: 0
-      Price: 0
-    - InterestIncome: 0
-      Price: 0
-  - BusinesId: 0
+    - InterestIncome: 100
+      Price: 1200
+    - InterestIncome: 200
+      Price: 4000
+  - BusinesId: 2
     ImprovementDatas:
-    - InterestIncome: 0
-      Price: 0
-    - InterestIncome: 0
-      Price: 0
-  - BusinesId: 0
+    - InterestIncome: 100
+      Price: 6000
+    - InterestIncome: 150
+      Price: 20000
+  - BusinesId: 3
     ImprovementDatas:
-    - InterestIncome: 0
-      Price: 0
-    - InterestIncome: 0
-      Price: 0
-  - BusinesId: 0
+    - InterestIncome: 100
+      Price: 15000
+    - InterestIncome: 200
+      Price: 50000
+  - BusinesId: 4
     ImprovementDatas:
-    - InterestIncome: 0
-      Price: 0
-    - InterestIncome: 0
-      Price: 0
+    - InterestIncome: 200
+      Price: 100000
+    - InterestIncome: 400
+      Price: 500000
