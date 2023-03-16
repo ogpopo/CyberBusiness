@@ -51,7 +51,8 @@ public class BusinessIncomeSystem : GameSystem
                 {
                     if (IncomeProgresDictionary[busines.BusinesId] >= config.BusinesIncomeConfig.FirstOrDefault(x => x.BusinesId == busines.BusinesId).IncomeDelay)
                     {
-                        changeMoneySignal.Dispatch(config.BusinesIncomeConfig.FirstOrDefault(x => x.BusinesId == busines.BusinesId).BasicIncomeValue * player.BusinesLevelData[busines.BusinesId]);
+                        changeMoneySignal.Dispatch((int)(config.BusinesIncomeConfig.FirstOrDefault(x => 
+                        x.BusinesId == busines.BusinesId).BasicIncomeValue * player.BusinesLevelData[busines.BusinesId] * player.MultiplierFromImprovements[busines.BusinesId]));
                         IncomeProgresDictionary[busines.BusinesId] = 0;
 
                         busines.ProgressBar.DOKill();

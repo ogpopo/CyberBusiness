@@ -1,3 +1,5 @@
+using Kuhpik;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -12,7 +14,6 @@ public enum ImprovementBusinesState
 public class ImprovementController : MonoBehaviour
 {
     [SerializeField] private _ImprovementState[] allStates;
-
     [SerializeField] private TMP_Text improvementIncome;
     [SerializeField] private TMP_Text costBuyingImprovements;
 
@@ -23,6 +24,10 @@ public class ImprovementController : MonoBehaviour
 
     public TMP_Text ImprovementIncome => improvementIncome;
     public TMP_Text CostBuyingImprovements => costBuyingImprovements;
+
+    public _ImprovementState ActiveState => activeState;
+
+    public Action<ImprovementController> IsNewChanges;
 
     public void StartImprovementController()
     {
@@ -61,5 +66,18 @@ public class ImprovementController : MonoBehaviour
         activeState.OpenState();
     }
 
+    public void SetActiveState(ImprovementBusinesState newState)
+    {
+        if (!improvementDictionary.ContainsKey(newState))
+            return;
 
+        if (activeState != null)
+            activeState.gameObject.SetActive(false);
+
+        activeState = improvementDictionary[newState];
+        activeState.gameObject.SetActive(true);
+        activeState.OpenState();
+
+        IsNewChanges.Invoke(this);
+    }
 }

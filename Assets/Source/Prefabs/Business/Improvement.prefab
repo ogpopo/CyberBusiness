@@ -274,6 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5949dee3eed6214381189c2d8beb988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  purchaseButton: {fileID: 341791979666586508}
 --- !u!1 &2723128883906828190
 GameObject:
   m_ObjectHideFlags: 0

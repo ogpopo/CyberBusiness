@@ -21,7 +21,7 @@ public class BusinesLevelUp : GameSystem
 
         if (player.PlayerBalance >= levelUpPrice)
         {
-            changeMoneySignal.Dispatch(levelUpPrice);
+            changeMoneySignal.Dispatch(-levelUpPrice);
 
             player.BusinesLevelData[busines.BusinesId]++;
 

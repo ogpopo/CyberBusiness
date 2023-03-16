@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7767827600104697595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c19187090b5c644890ffc6f6ceaf5fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockButton: {fileID: 0}
+  unlockButton: {fileID: 5947811979381296288}
 --- !u!1 &5606656254030174048
 GameObject:
   m_ObjectHideFlags: 0

@@ -88,6 +88,9 @@ public class BusinesController : MonoBehaviour
         activeState = businesDictionary[state];
         activeState.gameObject.SetActive(true);
         activeState.OpenState();
+
+        foreach (var improvement in businesImprovementControllers)
+            improvement.IsNewChanges += SaveChangesForImprovement;
     }
 
     public void SetActiveState(BusinesState newState)
@@ -110,6 +113,18 @@ public class BusinesController : MonoBehaviour
 
     public void IncomeProgressing()
     {
+    }
+
+    private void SaveChangesForImprovement(ImprovementController improvement)
+    {
+        int index = 0;
+
+        for (int i = 0; i < businesImprovementControllers.Length; i++)
+            if (businesImprovementControllers[i] == improvement)
+                index = i;
+
+        Bootstrap.Instance.PlayerData.BusinessImprovementDataDictinary[businesId][index] = improvement.ActiveState.State;
+        Bootstrap.Instance.SaveGame();
     }
 }
 

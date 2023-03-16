@@ -7,7 +7,7 @@ public class CloseBusinesState : _BusinesState
     [SerializeField] private Button unlockButton;
 
     private BusinesUnlockSignal businesUnlockSignal = Signals.Get<BusinesUnlockSignal>();
-    private UpdateUIForBusinesSignal updateUIForOpenBusinesSignal = Signals.Get<UpdateUIForBusinesSignal>();
+    private UpdateUIForBusinesSignal updateUIForBusinesSignal = Signals.Get<UpdateUIForBusinesSignal>();
 
     public override void InitState(BusinesController businesController)
     {
@@ -20,7 +20,7 @@ public class CloseBusinesState : _BusinesState
     {
         base.OpenState();
 
-        updateUIForOpenBusinesSignal.Dispatch(businesController);
+        updateUIForBusinesSignal.Dispatch(businesController);
 
         unlockButton.onClick.AddListener(OnUnlock);
     }

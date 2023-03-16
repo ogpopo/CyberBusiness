@@ -23,7 +23,7 @@ MonoBehaviour:
   - BusinesId: 0
     ImprovementDatas:
     - InterestIncome: 50
-      Price: 60
+      Price: 10
     - InterestIncome: 100
       Price: 400
   - BusinesId: 0
